@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Orange Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Purple Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#f97316',
+            primary: '#7c3aed',
+            secondary: '#a78bfa'
           }
         }
       }
@@ -25,9 +27,9 @@
 
 <!-- HEADER -->
 <header class="fixed w-full bg-white shadow z-50">
-  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-    <h1 class="text-2xl font-bold text-primary">OrangePort</h1>
-    <nav class="space-x-6 hidden md:block">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="text-2xl font-bold text-primary">PurplePort</h1>
+    <nav class="hidden md:flex space-x-6">
       <a href="#home" class="hover:text-primary">Home</a>
       <a href="#about" class="hover:text-primary">About</a>
       <a href="#services" class="hover:text-primary">Services</a>
@@ -37,104 +39,109 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="h-screen bg-cover bg-center flex items-center"
-style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');">
-  <div class="bg-black/60 w-full h-full flex items-center">
-    <div class="max-w-4xl mx-auto text-center text-white px-4">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Professional Web Portfolio</h2>
-      <p class="mb-6">Modern, Clean & Creative Landing Page</p>
-      <a href="#contact" class="bg-primary px-6 py-3 rounded text-white hover:bg-orange-600">
-        Get Started
+<section id="home" class="h-screen bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');">
+  <div class="bg-purple-900/70 h-full flex items-center">
+    <div class="max-w-4xl mx-auto text-center text-white px-6">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">
+        Creative Digital Portfolio
+      </h2>
+      <p class="mb-6 text-lg">
+        Build modern, clean & professional websites
+      </p>
+      <a href="#contact" class="bg-primary hover:bg-secondary px-6 py-3 rounded text-white font-semibold">
+        Contact Me
       </a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-20 max-w-7xl mx-auto px-4">
-  <h3 class="text-3xl font-bold text-center mb-6 text-primary">About Us</h3>
+<section id="about" class="py-20 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-primary mb-6">About Us</h3>
   <p class="text-center max-w-3xl mx-auto">
-    Kami adalah tim profesional yang fokus pada pengembangan website modern, cepat, dan responsif.
+    Kami adalah tim kreatif yang berfokus pada pembuatan website modern,
+    cepat, responsif, dan user-friendly.
   </p>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-10 text-primary">Services</h3>
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-primary mb-10">Services</h3>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="bg-white p-6 rounded shadow">
         <h4 class="font-bold text-xl mb-2">Web Development</h4>
-        <p>Website cepat & SEO friendly.</p>
+        <p>Website modern & performa tinggi.</p>
       </div>
       <div class="bg-white p-6 rounded shadow">
         <h4 class="font-bold text-xl mb-2">UI/UX Design</h4>
-        <p>Desain modern dan user friendly.</p>
+        <p>Desain profesional & mudah digunakan.</p>
       </div>
       <div class="bg-white p-6 rounded shadow">
         <h4 class="font-bold text-xl mb-2">Maintenance</h4>
-        <p>Support dan update berkala.</p>
+        <p>Support & update berkelanjutan.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FEATURES -->
-<section class="py-20 max-w-7xl mx-auto px-4">
-  <h3 class="text-3xl font-bold text-center mb-10 text-primary">Features</h3>
-  <div class="grid md:grid-cols-4 gap-6">
-    <div class="p-4 border rounded">Responsive</div>
-    <div class="p-4 border rounded">Fast Load</div>
-    <div class="p-4 border rounded">Clean Code</div>
-    <div class="p-4 border rounded">Modern Design</div>
+<section class="py-20 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-primary mb-10">Features</h3>
+  <div class="grid md:grid-cols-4 gap-6 text-center">
+    <div class="border p-4 rounded">Responsive</div>
+    <div class="border p-4 rounded">Fast Loading</div>
+    <div class="border p-4 rounded">Clean Code</div>
+    <div class="border p-4 rounded">Modern UI</div>
   </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECT -->
 <section class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-10 text-primary">Projects</h3>
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-primary mb-10">Projects</h3>
     <div class="grid md:grid-cols-3 gap-6">
-      <img class="rounded" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-      <img class="rounded" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8">
-      <img class="rounded" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+      <img class="rounded" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec">
+      <img class="rounded" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+      <img class="rounded" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
     </div>
   </div>
 </section>
 
 <!-- TEAM -->
-<section class="py-20 max-w-7xl mx-auto px-4">
-  <h3 class="text-3xl font-bold text-center mb-10 text-primary">Our Team</h3>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="text-center">
-      <img class="rounded-full mx-auto mb-4" src="https://randomuser.me/api/portraits/men/32.jpg">
-      <h4 class="font-bold">John Doe</h4>
+<section class="py-20 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-primary mb-10">Our Team</h3>
+  <div class="grid md:grid-cols-3 gap-6 text-center">
+    <div>
+      <img class="rounded-full mx-auto mb-4" src="https://randomuser.me/api/portraits/men/45.jpg">
+      <h4 class="font-bold">Michael</h4>
     </div>
-    <div class="text-center">
-      <img class="rounded-full mx-auto mb-4" src="https://randomuser.me/api/portraits/women/44.jpg">
-      <h4 class="font-bold">Jane Smith</h4>
+    <div>
+      <img class="rounded-full mx-auto mb-4" src="https://randomuser.me/api/portraits/women/60.jpg">
+      <h4 class="font-bold">Sarah</h4>
     </div>
-    <div class="text-center">
-      <img class="rounded-full mx-auto mb-4" src="https://randomuser.me/api/portraits/men/76.jpg">
-      <h4 class="font-bold">Alex Lee</h4>
+    <div>
+      <img class="rounded-full mx-auto mb-4" src="https://randomuser.me/api/portraits/men/30.jpg">
+      <h4 class="font-bold">Daniel</h4>
     </div>
   </div>
 </section>
 
 <!-- PRICING -->
 <section class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-10 text-primary">Pricing</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded shadow text-center">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-primary mb-10">Pricing</h3>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 rounded shadow">
         <h4 class="font-bold">Basic</h4>
         <p class="text-2xl">$99</p>
       </div>
-      <div class="bg-primary text-white p-6 rounded shadow text-center">
+      <div class="bg-primary text-white p-6 rounded shadow">
         <h4 class="font-bold">Pro</h4>
         <p class="text-2xl">$199</p>
       </div>
-      <div class="bg-white p-6 rounded shadow text-center">
+      <div class="bg-white p-6 rounded shadow">
         <h4 class="font-bold">Enterprise</h4>
         <p class="text-2xl">$299</p>
       </div>
@@ -142,55 +149,69 @@ style="background-image:url('https://images.unsplash.com/photo-1498050108023-c52
   </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-primary mb-10">Testimonials</h3>
+  <p class="text-center max-w-2xl mx-auto">
+    "Website yang dibuat sangat profesional dan cepat!"
+  </p>
+</section>
+
 <!-- FAQ -->
-<section class="py-20 max-w-7xl mx-auto px-4">
-  <h3 class="text-3xl font-bold text-center mb-10 text-primary">FAQ</h3>
-  <p>❓ Apakah website responsive? ✔️ Ya</p>
-  <p>❓ Apakah support tersedia? ✔️ Ya</p>
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-primary mb-6">FAQ</h3>
+    <p>✔ Apakah website responsive? Ya.</p>
+    <p>✔ Apakah ada support? Ya.</p>
+  </div>
 </section>
 
 <!-- BLOG -->
-<section class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center mb-10 text-primary">Blog</h3>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded shadow">Artikel 1</div>
-      <div class="bg-white p-4 rounded shadow">Artikel 2</div>
-      <div class="bg-white p-4 rounded shadow">Artikel 3</div>
-    </div>
+<section class="py-20 max-w-7xl mx-auto px-6">
+  <h3 class="text-3xl font-bold text-center text-primary mb-10">Blog</h3>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="border p-4 rounded">Artikel 1</div>
+    <div class="border p-4 rounded">Artikel 2</div>
+    <div class="border p-4 rounded">Artikel 3</div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 max-w-7xl mx-auto px-4">
-  <h3 class="text-3xl font-bold text-center mb-10 text-primary">Contact</h3>
-  <form class="max-w-xl mx-auto space-y-4">
-    <input class="w-full border p-3 rounded" placeholder="Name">
-    <input class="w-full border p-3 rounded" placeholder="Email">
-    <textarea class="w-full border p-3 rounded" placeholder="Message"></textarea>
-    <button class="bg-primary text-white px-6 py-3 rounded w-full">Send</button>
-  </form>
+<section id="contact" class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center text-primary mb-10">Contact</h3>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input class="w-full border p-3 rounded" placeholder="Name">
+      <input class="w-full border p-3 rounded" placeholder="Email">
+      <textarea class="w-full border p-3 rounded" placeholder="Message"></textarea>
+      <button class="w-full bg-primary hover:bg-secondary text-white py-3 rounded">
+        Send Message
+      </button>
+    </form>
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-black text-white text-center p-6">
-  © 2025 Orange Portfolio
+<footer class="bg-purple-900 text-white text-center py-6">
+  © 2025 Purple Portfolio. All Rights Reserved.
 </footer>
 
-<!-- BACK TO TOP BUTTON -->
+<!-- BACK TO TOP -->
 <button id="topBtn"
 class="hidden fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg">
 ⬆
 </button>
 
 <script>
-  const btn = document.getElementById("topBtn");
+  const topBtn = document.getElementById("topBtn");
 
   window.addEventListener("scroll", () => {
-    btn.classList.toggle("hidden", window.scrollY < 300);
+    topBtn.classList.toggle("hidden", window.scrollY < 300);
   });
 
-  btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 </script>
 
 </body>
